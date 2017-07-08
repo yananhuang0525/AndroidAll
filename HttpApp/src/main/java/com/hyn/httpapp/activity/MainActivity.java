@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dialog.setMessage("请稍等。。。");
         switch (v.getId()) {
             case R.id.btn_post:
-                manager.getInfo(dialog, "黄亚南", "410225199105251574", new HttpHelp.DataCallBack() {
+                manager.getInfo(dialog, "", "", new HttpHelp.DataCallBack() {
                     @Override
                     public void onSuccess(String result) {
                         tv_show.setText(result);
@@ -52,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 });
                 break;
             case R.id.btn_get:
-                manager.get(dialog, "410225199105251574", new HttpHelp.DataCallBack() {
+                manager.get(dialog, "", new HttpHelp.DataCallBack() {
                     @Override
                     public void onSuccess(String result) {
                         tv_show.setText(result);
