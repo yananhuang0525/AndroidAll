@@ -5,6 +5,8 @@ import android.app.Application;
 import com.lzy.okgo.OkGo;
 import com.lzy.okgo.interceptor.HttpLoggingInterceptor;
 
+import org.litepal.LitePalApplication;
+
 import java.util.concurrent.TimeUnit;
 import java.util.logging.Level;
 
@@ -16,7 +18,7 @@ import okhttp3.OkHttpClient;
  * author: huangyanan
  */
 
-public class MyApp extends Application {
+public class MyApp extends LitePalApplication {
     @Override
     public void onCreate() {
         super.onCreate();

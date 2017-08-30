@@ -2,7 +2,7 @@ apply plugin: 'com.android.library'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
+    buildToolsVersion '25.0.2'
 
     defaultConfig {
         minSdkVersion 15
@@ -30,4 +30,6 @@ dependencies {
     testCompile 'junit:junit:4.12'
     compile 'com.lzy.net:okgo:3.0.2'
     compile 'com.alibaba:fastjson:1.2.34'
+    //LitePal数据库框架 http://blog.csdn.net/guolin_blog/article/details/39345833
+    compile 'org.litepal.android:core:1.5.1'
 }
