@@ -5,8 +5,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.hyn.baselibrary.core.BaseActivity;
+
+import cn.qqtheme.framework.picker.DateTimePicker;
 
 
 public class MainActivity extends BaseActivity implements View.OnClickListener {
@@ -42,7 +45,20 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         }
     }
 
-    public void selectDate(View view) {
+    private void showToast(String msg) {
+        Toast.makeText(this, msg, Toast.LENGTH_SHORT).show();
+    }
 
+    public void selectDate(View view) {
+        DateTimePicker dateTimePicker = new DateTimePicker(this, DateTimePicker.HOUR_12);
+        dateTimePicker.setDateRangeStart(2017, 1, 1);
+        dateTimePicker.setDateRangeEnd(2050, 12, 31);
+        dateTimePicker.setOnDateTimePickListener(new DateTimePicker.OnYearMonthDayTimePickListener() {
+            @Override
+            public void onDateTimePicked(String year, String month, String day, String hour, String minute) {
+                showToast(year + "-" + month + "-" + day + " " + hour + ":" + minute);
+            }
+        });
+        dateTimePicker.show();
     }
 }
