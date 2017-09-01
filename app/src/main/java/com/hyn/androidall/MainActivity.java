@@ -1,5 +1,6 @@
 package com.hyn.androidall;
 
+import android.content.Intent;
 import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
@@ -60,5 +61,9 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
             }
         });
         dateTimePicker.show();
+    }
+
+    public void onRefresh(View view) {
+        startActivity(new Intent(this, RefreshActivity.class));
     }
 }
