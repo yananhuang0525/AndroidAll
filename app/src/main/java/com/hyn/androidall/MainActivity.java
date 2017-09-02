@@ -5,9 +5,11 @@ import android.location.LocationManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.bumptech.glide.Glide;
 import com.hyn.baselibrary.core.BaseActivity;
 
 import cn.qqtheme.framework.picker.DateTimePicker;
@@ -20,6 +22,7 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
     private double longitude = 0.0;
     private LocationManager locationManager;
     private String locationProvider;
+    private ImageView iv;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -34,12 +37,14 @@ public class MainActivity extends BaseActivity implements View.OnClickListener {
         btn_get = (Button) findViewById(R.id.btn_get);
         btn_get.setOnClickListener(this);
         tv_show = (TextView) findViewById(R.id.tv_show);
+        iv = (ImageView) findViewById(R.id.iv);
     }
 
     @Override
     public void onClick(View v) {
         switch (v.getId()) {
             case R.id.btn_http:
+                Glide.with(this).load("http://ww4.sinaimg.cn/large/610dc034gw1f96kp6faayj20u00jywg9.jpg").placeholder(R.mipmap.ic_launcher).into(iv);
                 break;
             case R.id.btn_get://获取经纬度
                 break;

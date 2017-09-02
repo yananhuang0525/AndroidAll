@@ -44,4 +44,8 @@ dependencies {
     compile 'com.scwang.smartrefresh:SmartRefreshHeader:1.0.3'
     //BaseRecyclerViewAdapterHelper框架
     compile 'com.github.CymChad:BaseRecyclerViewAdapterHelper:2.9.22'
+
+    compile 'com.github.bumptech.glide:glide:3.7.0'
+    compile 'com.android.support:support-v4:25.3.1'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.0.0'
 }
