@@ -39,6 +39,12 @@
         android:onClick="selectDate"
         android:text="选择时间" />
 
+    <Button
+        android:id="@+id/btn_gv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="girdview" />
+
     <TextView
         android:id="@+id/tv_show"
         android:layout_width="wrap_content"

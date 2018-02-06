@@ -41,7 +41,7 @@ public class MyApp extends LitePalApplication {
         //全局的写入超时时间
         builder.writeTimeout(OkGo.DEFAULT_MILLISECONDS, TimeUnit.MILLISECONDS);
         //全局的连接超时时间
-        builder.connectTimeout(1000, TimeUnit.MILLISECONDS);
+        builder.connectTimeout(10000, TimeUnit.MILLISECONDS);
         OkGo.getInstance().init(this)                       //必须调用初始化
                 .setOkHttpClient(builder.build());
     }

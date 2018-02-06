@@ -1,4 +1,4 @@
-package com.hyn.androidall;
+package com.hyn.androidall.activity;
 
 import android.os.Bundle;
 import android.support.annotation.Nullable;
@@ -8,16 +8,14 @@ import android.view.View;
 import android.widget.Toast;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
+import com.hyn.androidall.adapter.ListAdapter;
+import com.hyn.androidall.R;
 import com.hyn.baselibrary.core.BaseActivity;
-import com.scwang.smartrefresh.header.MaterialHeader;
 import com.scwang.smartrefresh.layout.api.RefreshLayout;
-import com.scwang.smartrefresh.layout.constant.SpinnerStyle;
-import com.scwang.smartrefresh.layout.footer.BallPulseFooter;
 import com.scwang.smartrefresh.layout.footer.ClassicsFooter;
 import com.scwang.smartrefresh.layout.header.ClassicsHeader;
 import com.scwang.smartrefresh.layout.listener.OnRefreshLoadmoreListener;
 
-import java.text.DateFormat;
 import java.util.ArrayList;
 import java.util.List;
 

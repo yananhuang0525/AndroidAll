@@ -1,10 +1,11 @@
-package com.hyn.androidall;
+package com.hyn.androidall.adapter;
 
 import android.support.annotation.LayoutRes;
 import android.support.annotation.Nullable;
 
 import com.chad.library.adapter.base.BaseQuickAdapter;
 import com.chad.library.adapter.base.BaseViewHolder;
+import com.hyn.androidall.R;
 
 import java.util.List;
 
