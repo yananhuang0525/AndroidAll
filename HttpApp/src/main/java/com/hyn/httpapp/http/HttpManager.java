@@ -14,7 +14,7 @@ import java.util.Map;
  */
 
 public class HttpManager {
-    String url = "http://116.255.137.170:8080/001/f/person/info";
+    String url = "http://116.255.137.170:8080/001/f/person/info1101";
     String getInfo = "http://218.28.166.68:9002/TestWeixin/commond.action";
 
     /**
